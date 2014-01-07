@@ -11,7 +11,7 @@ configure :development do
     # DataMapper.setup(
     #     :default,
     #     'mysql:://root:12345@localhost/sinatra_service'
-    # )
+    # 
 end
 
 
@@ -23,8 +23,8 @@ configure :production do
     # )
 end
 
-# require './models/init'
-# require './models/init'
-# require './models/init'
+require './models/init'
+require './helpers/init'
+require './routes/init'
 
 DataMapper.finalize
