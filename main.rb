@@ -3,6 +3,7 @@ require 'json'
 require 'sinatra'
 require 'data_mapper'
 require 'dm-migrations'
+require 'haml'
 
 configure :development do
     DataMapper::Logger.new($stdout, :debug)

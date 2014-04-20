@@ -57,6 +57,8 @@ GEM
     do_sqlite3 (0.10.13)
       data_objects (= 0.10.13)
     fastercsv (1.5.5)
+    haml (4.0.5)
+      tilt
     json (1.7.4)
     json_pure (1.8.1)
     multi_json (1.8.2)
@@ -78,5 +80,6 @@ DEPENDENCIES
   data_mapper (= 1.2.0)
   dm-postgres-adapter (= 1.2.0)
   dm-sqlite-adapter (= 1.2.0)
+  haml
   json (= 1.7.4)
   sinatra (= 1.4.4)
