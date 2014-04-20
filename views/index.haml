@@ -6,6 +6,10 @@
   %p
     By 
     %a{href: "//twitter.com/therealcoelho"} Karl Coelho
+  %button{"ng-click" => "loadData()"} Load Data from server
+  %ul
+    %li here is something
+    /%li{"ng-repeat" => "item in items"} ID: {{item.id}}, Name: {{item.title}}
 :css
     /* Some custom style. Feel free to delete this */
   h1,p {
