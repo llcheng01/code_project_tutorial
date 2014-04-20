@@ -1,7 +1,8 @@
 # encoding: UTF-8
 
 get '/' do
-    haml :index
+    # haml :index
+    erb :index
 end
 
 get '/example.json' do
