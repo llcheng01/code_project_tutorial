@@ -5,6 +5,10 @@ get '/' do
     erb :index
 end
 
+get '/partials/:name' do
+    erb "/partials/" + params[:name].to_sym, layout: false
+end
+
 get '/example.json' do
     content_type :json
     {:key1 => 'value1', :key2 => 'value2'}.to_json
