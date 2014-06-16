@@ -5,8 +5,19 @@ get '/' do
     erb :index
 end
 
+get '/static' do
+    erb :static
+end
+
+post '/static' do
+  body = JSON.parse request.body.read
+  comment = {text: body['text']}
+  status 201
+  format_response(comment, request.accept)
+end
+
 get '/partials/:name' do
-    erb "/partials/" + params[:name].to_sym, layout: false
+    erb params[:name].to_sym, layout: false
 end
 
 get '/example.json' do

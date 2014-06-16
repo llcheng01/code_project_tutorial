@@ -1,14 +1,4 @@
-<div class="jumbotron text-center">
-<h1>Welcome to <br> The Sinatra Boilerplate.</h1>
-<p>Your one stop destination to getting to work with <br> Sinatra
-as fast as possible.</p>
-<p>By <a href="//twitter.com/therealcoelho">Karl Coelho</a></p><br><br><br>
-<button ng-click="loadData()">Load Data</button>
-<ul>
-    <li ng-repeat="item in items">ID: {{item.id}}, Name: {{item.title}}</li>
-</ul>
-<div ng-view></div>
-</div>
+<div class="row" ng-view></div>
 
 <style>
 /* Some custom style. Feel free to delete this */
@@ -26,6 +16,3 @@ a, a:hover {
     background-color: #34495e;
 }
 </style>
-<script>
-console.log('\n\n\n\n\n\nThanks for using Sinatra Boilerplate! Much Love!\n\n\n\n\n\n\n');
-</script>

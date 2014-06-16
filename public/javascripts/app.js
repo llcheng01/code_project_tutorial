@@ -1,6 +1,6 @@
 var app = angular.module('myApp', ['ngRoute','myApp.services','myApp.controllers']).
     config(['$routeProvider', function($routeProvider){
-        $routeProvider.when('/', {templateUrl: 'partials/movie-list.erb', controller: 'MovieListCtrl'});
+        $routeProvider.when('/', {templateUrl: 'partials/movie-list', controller: 'MovieListCtrl'});
         $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
