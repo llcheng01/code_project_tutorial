@@ -6,5 +6,5 @@ class Movie
   property :title,      String
   property :director,   String
   property :synopsis,   Text
-  property :year, 		Integer
+  property :year,       Integer
 end

@@ -7,3 +7,10 @@ gem 'dm-sqlite-adapter', '1.2.0'
 gem 'dm-postgres-adapter', '1.2.0'
 # gem 'dm-mysql-adapter', '1.2.0'
 gem 'haml'
+
+group :development, :test do
+    gem 'rspec'
+    gem 'rack-test'
+    gem "factory_girl"
+    gem "capybara"
+end
