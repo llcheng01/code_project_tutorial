@@ -7,6 +7,8 @@ gem 'dm-sqlite-adapter', '1.2.0'
 gem 'dm-postgres-adapter', '1.2.0'
 # gem 'dm-mysql-adapter', '1.2.0'
 gem 'haml'
+gem 'compass', '0.12.3'
+gem "thin", "1.2.7"
 
 group :development, :test do
     gem 'rspec'

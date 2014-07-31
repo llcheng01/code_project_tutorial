@@ -1,7 +1,7 @@
 # encoding: UTF-8
 get '/' do
-    # haml :index
-    erb :index
+    # erb :index
+    File.read(File.join('public/app', 'index.html'))
 end
 
 get '/static' do
