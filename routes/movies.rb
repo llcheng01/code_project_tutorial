@@ -1,7 +1,12 @@
 # encoding: UTF-8
 get '/' do
     # erb :index
-    File.read(File.join('public/app', 'index.html'))
+    # File.read(File.join('public/app', 'index.html'))
+    send_file File.join(settings.public_folder, 'index.html')
+end
+
+get '/styles/main.css' do
+    send_file File.join('public', settings.styles_folder, 'main.css')
 end
 
 get '/static' do

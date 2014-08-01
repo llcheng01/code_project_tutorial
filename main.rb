@@ -13,6 +13,10 @@ configure :development do
     #     :default,
     #     'mysql:://root:12345@localhost/sinatra_service'
     # 
+    enable :logging
+    set :public_folder, 'public/app'
+    set :styles_folder, '.tmp/styles'
+    set :scripts_folder, 'scripts'
 end
 
 
