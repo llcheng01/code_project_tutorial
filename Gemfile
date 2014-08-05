@@ -9,6 +9,7 @@ gem 'dm-postgres-adapter', '1.2.0'
 gem 'haml'
 gem 'compass', '0.12.3'
 gem "thin", "1.2.7"
+gem 'sinatra-assetpack'
 
 group :development, :test do
     gem 'rspec'

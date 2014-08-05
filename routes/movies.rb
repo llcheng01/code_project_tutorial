@@ -5,10 +5,6 @@ get '/' do
     send_file File.join(settings.public_folder, 'index.html')
 end
 
-get '/styles/main.css' do
-    send_file File.join('public', settings.styles_folder, 'main.css')
-end
-
 get '/static' do
     erb :static
 end
