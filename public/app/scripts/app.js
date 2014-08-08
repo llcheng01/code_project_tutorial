@@ -12,7 +12,9 @@ angular
   .module('publicApp', [
     'ngCookies',
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'publicApp.services',
+    'publicApp.controllers'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,6 +25,14 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/movie-detail/:id', {
+        templateUrl: 'partials/movie-detail',
+        controller: 'MovieDetailCtrl'
+      })
+      .when('/movie-create', {
+        templateUrl: 'partials/movie-create',
+        controller: 'MovieCreateCtrl'
       })
       .otherwise({
         redirectTo: '/'
