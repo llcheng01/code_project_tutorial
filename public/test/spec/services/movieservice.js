@@ -7,8 +7,8 @@ describe('Service: movieService', function () {
 
   // instantiate service
   var movieService;
-  beforeEach(inject(function (_movieService_) {
-    movieService = _movieService_;
+  beforeEach(inject(function (_MovieFactory_) {
+    movieService = _MovieFactory_;
   }));
 
   it('should do something', function () {

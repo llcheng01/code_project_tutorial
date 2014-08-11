@@ -17,7 +17,7 @@ services.service('MoviesFactory', ['$resource',
         });
 }]);
 
-services.service('movieService', ['$resource',
+services.service('MovieFactory', ['$resource',
     function($resource) {
         return $resource('/api/movies/:id', {}, {
             show: {method: 'GET'},
