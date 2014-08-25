@@ -29,11 +29,11 @@ angular
         controller: 'AboutCtrl'
       })
       .when('/movie-detail/:id', {
-        templateUrl: 'partials/movie-detail',
+        templateUrl: 'views/movie-detail.html',
         controller: 'MovieDetailCtrl'
       })
       .when('/movie-create', {
-        templateUrl: 'partials/movie-create',
+        templateUrl: 'views/movie-create.html',
         controller: 'MovieCreateCtrl'
       })
       .otherwise({

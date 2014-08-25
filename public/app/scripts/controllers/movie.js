@@ -36,12 +36,12 @@ app.controller('MovieDetailCtrl', ['$scope', '$routeParams', 'MovieFactory', '$l
         // callback for ng-click 'updateMovie'
         $scope.updateMovie = function() {
             MovieFactory.update($scope.movie);
-            $location.path('partials/movie-list');
+            $location.path('/movie-list');
         };
 
         // callback for ng-click 'cancel'
         $scope.cancel = function(){
-            $location.path('partials/movie-list');
+            $location.path('/movie-list');
         };
         $scope.movie = MovieFactory.show({id: $routeParams.id});
     }]);
@@ -50,7 +50,7 @@ app.controller('MovieCreateCtrl', ['$scope', 'MoviesFactory', '$location',
         // callback for ng-click 'createMovie'
         $scope.createMovie = function() {
             MoviesFactory.create($scope.movie);
-            $location.path('partials/movie-list');
+            $location.path('/movie-list');
         };
 
     }
