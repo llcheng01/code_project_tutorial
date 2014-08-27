@@ -7,12 +7,33 @@ describe('Service: movieService', function () {
 
   // instantiate service
   var movieService;
-  beforeEach(inject(function (_MovieFactory_) {
+  var moviesService;
+  beforeEach(inject(function (_MovieFactory_, _MoviesFactory_) {
     movieService = _MovieFactory_;
+    moviesService = _MoviesFactory_;
   }));
 
-  it('should do something', function () {
-    expect(!!movieService).toBe(true);
+  describe("MovieFactory", function(){
+
+    it('should do something', function () {
+      expect(!!movieService).toBe(true);
+    });
+    // show
+    // update
+    // delete
+
   });
+
+  describe("MoviesFactory", function(){
+
+    it('should do something', function () {
+      expect(!!moviesService).toBe(true);
+    });
+
+    // query
+    // create
+  });
+
+
 
 });
